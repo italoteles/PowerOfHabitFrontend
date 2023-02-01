@@ -1,0 +1,45 @@
+{  
+  "users": [
+      {
+        "id": 1,
+        "login": "admin",
+        "name": "Administrador",
+        "role": "admin"
+      },
+      {
+        "id": 2,
+        "login": "italo",
+        "name": "Ítalo Teles",
+        "role": "user"
+      },
+      {
+        "id": 3,
+        "login": "jose",
+        "name": "Jose da Silva",
+        "role": "user"
+      },
+      {
+        "id": 4,
+        "login": "Denisson",
+        "name": "Denisson Santos",
+        "role": "user"
+      },
+      {
+        "id": 5,
+        "login": "alfran",
+        "name": "Alfran Pereira Junior",
+        "role": "user"
+      }
+      
+    ],
+    "groups":[
+      {
+        "id": 1,
+        "name": "alfran"
+      },
+      {
+        "id": 1,
+        "name": "alfran"
+      }
+    ]
+  }
