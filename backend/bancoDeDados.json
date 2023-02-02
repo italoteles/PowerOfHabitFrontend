@@ -1,45 +1,160 @@
 {  
-  "users": [
+  "user": [
       {
         "id": 1,
         "login": "admin",
         "name": "Administrador",
-        "role": "admin"
+        "role": "admin",
+        "active": 1
       },
       {
         "id": 2,
         "login": "italo",
         "name": "Ítalo Teles",
-        "role": "user"
+        "role": "user",
+        "active": 1
       },
       {
         "id": 3,
         "login": "jose",
         "name": "Jose da Silva",
-        "role": "user"
+        "role": "user",
+        "active": 1
       },
       {
         "id": 4,
         "login": "Denisson",
         "name": "Denisson Santos",
-        "role": "user"
+        "role": "user",
+        "active": 1
       },
       {
         "id": 5,
         "login": "alfran",
         "name": "Alfran Pereira Junior",
-        "role": "user"
+        "role": "user",
+        "active": 1
       }
       
     ],
-    "groups":[
+    "group":[
       {
         "id": 1,
-        "name": "alfran"
+        "name": "Clube da Leitura",
+        "description": "Grupo dedicado a colocar as horas diárias de leitura",
+        "unit": "minutos",
+        "active": 1
       },
       {
+        "id": 2,
+        "name": "Grupo da Atividade Física",
+        "description": "Grupo dedicado a colocar as horas diárias de atividade física",
+        "unit": "horas",
+        "active": 1
+      },
+      {
+        "id": 3,
+        "name": "Monges",
+        "description": "Grupo para Meditação",
+        "unit": "minutos",
+        "active": 1
+      }
+    ],
+    "userGroup":[
+      {
         "id": 1,
-        "name": "alfran"
+        "idUser": 2,
+        "idGroup": 1,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "idUser": 2,
+        "idGroup": 2,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "idUser": 2,
+        "idGroup": 1,
+        "active": 1
+      },
+      {
+        "id": 4,
+        "idUser": 3,
+        "idGroup": 1,
+        "active": 1
+      },
+      {
+        "id": 5,
+        "idUser": 3,
+        "idGroup": 3,
+        "active": 1
+      },
+      {
+        "id": 6,
+        "idUser": 4,
+        "idGroup": 1,
+        "active": 1
+      }
+    ],
+    "track":[
+      {
+        "id": 1,
+        "idUserGroup": 2,
+        "registrationDate":"2023-01-01T00:00:00",
+        "amount":60,
+        "active": 1
+      },
+      {
+        "id": 2,
+        "idUserGroup": 2,
+        "registrationDate":"2023-01-02T00:00:00",
+        "amount":60,
+        "active": 1
+      },
+      {
+        "id": 3,
+        "idUserGroup": 2,
+        "registrationDate":"2023-01-03T00:00:00",
+        "amount":160,
+        "active": 1
+      },
+      {
+        "id": 4,
+        "idUserGroup": 2,
+        "registrationDate":"2023-01-04T00:00:00",
+        "amount":45,
+        "active": 1
+      },
+      {
+        "id": 5,
+        "idUserGroup": 2,
+        "registrationDate":"2023-01-05T00:00:00",
+        "amount":60,
+        "active": 1
+      },
+      {
+        "id": 6,
+        "idUserGroup": 5,
+        "registrationDate":"2023-01-06T00:00:00",
+        "amount":30,
+        "active": 1
+      },
+      {
+        "id": 7,
+        "idUserGroup": 4,
+        "registrationDate":"2023-01-06T00:00:00",
+        "amount":60,
+        "active": 1
+      },
+      {
+        "id": 8,
+        "idUserGroup": 2,
+        "registrationDate":"2023-01-07T00:00:00",
+        "amount":60,
+        "active": 1
       }
     ]
+    
   }
