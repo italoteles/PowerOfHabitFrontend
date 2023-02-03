@@ -3,7 +3,11 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { User } from '../models/User.model';
 
-export class UserService{
+
+@Injectable({
+    providedIn: 'root'
+  })
+export class AuthenticationService{
     baseUrl = "http://localhost:3001/user";
 
     constructor(private http : HttpClient)
@@ -11,9 +15,10 @@ export class UserService{
 
     }
 
-    login(user : User) : Observable<User[]>{
-        const url = `${this.baseUrl}/${id}`
-        return this.http.get<User[]>(this.baseUrl);
+    login(user : User) : Observable<User>{
+        const url = `${this.baseUrl}?login=${user.login}&password=${user.password}`;
+        
+        return this.http.get<User>(this.baseUrl);
         
     }
 
