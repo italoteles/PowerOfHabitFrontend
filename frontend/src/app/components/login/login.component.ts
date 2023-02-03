@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     this.form = new UntypedFormGroup(
       {
         userLogin: new UntypedFormControl(''),
-        userPassword: new UntypedFormControl(''),
+        userPassword: new UntypedFormControl(),
        
       },
       { updateOn: 'submit' }
@@ -35,13 +35,13 @@ export class LoginComponent implements OnInit {
   login(): void {
     
     this.userForm.login = this.form.controls['userLogin'].value != '' ? this.form.controls['userLogin'].value : null;
-    this.userForm.login = this.form.controls['userPassword'].value != '' ? this.form.controls['userPassword'].value : null;
+    this.userForm.password = this.form.controls['userPassword'].value != '' ? this.form.controls['userPassword'].value : null;
   
     this.authenticationService.login(this.userForm).subscribe(userResult => {
-      if (userResult != null){
+      if (userResult.length != 0){
         //o session so guarda string, então para guardar objeto temos que dar o stringfy
-        
-        sessionStorage.setItem('user', JSON.stringify(userResult));
+        console.log("Meu usuário é ===========" +JSON.stringify(userResult[0]))
+        sessionStorage.setItem('user', JSON.stringify(userResult[0]));
 
         //para ler o session tem que dar um parse de string para JSON
         // var retrievedObject = localStorage.getItem('testObject');

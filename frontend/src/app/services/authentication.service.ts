@@ -15,10 +15,10 @@ export class AuthenticationService{
 
     }
 
-    login(user : User) : Observable<User>{
+    login(user : User) : Observable<User[]>{
         const url = `${this.baseUrl}?login=${user.login}&password=${user.password}`;
         
-        return this.http.get<User>(this.baseUrl);
+        return this.http.get<User[]>(url);
         
     }
 
