@@ -1,7 +1,7 @@
 <div class="tela">
     <div class="login">
         <h1 class="text-center">Poder do Hábito</h1>
-        <form class="needs-validation" (ngSubmit)="login()">
+        <form class="needs-validation" [formGroup]="form" (ngSubmit)="login()">
             <div class="form-group was-validated">
                 <label class="form-label" for="login">Usuário</label>
                 <input class="form-control" type="text" id="login" required formControlName="userLogin">

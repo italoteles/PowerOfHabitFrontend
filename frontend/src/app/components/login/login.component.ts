@@ -10,7 +10,7 @@ import { Router} from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  userForm: User;
+  userForm: User = new User();
   form: UntypedFormGroup;
 
 
