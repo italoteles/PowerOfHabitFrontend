@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
+import { FormControl, FormGroup, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { User } from 'src/app/models/User.model';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { Router} from '@angular/router';
@@ -22,10 +22,10 @@ export class LoginComponent implements OnInit {
   }
 
   criarFormulario() {
-    this.form = new UntypedFormGroup(
+    this.form = new FormGroup(
       {
-        userLogin: new UntypedFormControl(''),
-        userPassword: new UntypedFormControl(),
+        userLogin: new FormControl(''),
+        userPassword: new FormControl(),
        
       },
       { updateOn: 'submit' }
