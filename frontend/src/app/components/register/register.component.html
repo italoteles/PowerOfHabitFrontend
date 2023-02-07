@@ -1,0 +1,43 @@
+<div class="tela">
+    <div class="login">
+        <h1 class="text-center">Poder do Hábito</h1>
+        <form class="needs-validation" [formGroup]="form" (ngSubmit)="register()">
+            <div class="form-group was-validated">
+                <label class="form-label" for="name">Nome</label>
+                <input class="form-control" type="text" id="name" required formControlName="userName">
+                <div class="invalid-feedback">
+                    Por favor, insira o seu nome!
+                </div>
+            </div>
+            <div class="form-group was-validated">
+                <label class="form-label" for="login">Login</label>
+                <input class="form-control" type="text" id="login" required formControlName="userLogin">
+                <div class="invalid-feedback">
+                    Por favor, insira o seu login!
+                </div>
+            </div>
+            <div class="form-group was-validated">
+                <label class="form-label" for="password" >Senha</label>
+                <input class="form-control" type="password" id="password" required formControlName="userPassword">
+                <div class="invalid-feedback">
+                    Por favor, insira sua senha!
+                </div>
+            </div>
+            <div class="form-group was-validated">
+                <label class="form-label" for="passwordConfirmation" >Confirme a senha</label>
+                <input class="form-control" type="password" id="passwordConfirmation" required formControlName="userPasswordConfirmation">
+                <div class="invalid-feedback">
+                    Por favor, confirme sua senha!
+                </div>
+                <div class="text-danger" *ngIf="passwordMatchError">
+                    Senha não combina!
+                </div>
+            </div>
+            
+            
+            <input class="btn btn-success w-100" type="submit" value="Registrar Usuário">
+        </form>
+        
+
+    </div>
+</div>
