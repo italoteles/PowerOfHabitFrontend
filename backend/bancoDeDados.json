@@ -63,6 +63,12 @@
       "password": "1234",
       "name": "Vinicius Costa",
       "id": 9
+    },
+    {
+      "login": "aryon",
+      "password": "1234",
+      "name": "Aryon Fallen",
+      "id": 10
     }
   ],
   "group": [
