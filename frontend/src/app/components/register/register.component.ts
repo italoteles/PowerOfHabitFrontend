@@ -38,14 +38,17 @@ export class RegisterComponent {
 
   register(): void {
 
-    this.passwordMatchError = false;
+    
     this.user.login = this.form.controls['userLogin'].value != '' ? this.form.controls['userLogin'].value : null;
     this.user.password = this.form.controls['userPassword'].value != '' ? this.form.controls['userPassword'].value : null;
-    let userPasswordConfirmation = this.form.controls['userPasswordConfirmation'].value != '' ? this.form.controls['userPassword'].value : null;
+    let userPasswordConfirmation = this.form.controls['userPasswordConfirmation'].value != '' ? this.form.controls['userPasswordConfirmation'].value : null;
 
     this.user.name = this.form.controls['userName'].value != '' ? this.form.controls['userName'].value : null;
-
-    if (userPasswordConfirmation.value != this.user.password){
+    console.log("O passwordMatchError =====" + this.passwordMatchError);
+    console.log("this.user.password =====" + this.user.password);
+    console.log("userPasswordConfirmation =====" + userPasswordConfirmation.value);
+    if (userPasswordConfirmation != this.user.password){
+      console.log("entrei no if !!!!!")
       this.passwordMatchError = true
       return;
     }

@@ -51,6 +51,18 @@
       "password": "1234",
       "name": "Valdívia Menezes",
       "id": 7
+    },
+    {
+      "login": "pedro",
+      "password": "1234",
+      "name": "Pedro Ferreira",
+      "id": 8
+    },
+    {
+      "login": "vinicius",
+      "password": "1234",
+      "name": "Vinicius Costa",
+      "id": 9
     }
   ],
   "group": [
