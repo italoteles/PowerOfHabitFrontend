@@ -9,6 +9,7 @@ import { AuthenticationService } from './services/authentication.service';
 import { PainelPrincipalComponent } from './components/painel-principal/painel-principal.component';
 import { RegisterComponent } from './components/register/register.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { RegisterComponent } from './components/register/register.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
 
   ],
   providers: [

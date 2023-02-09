@@ -12,6 +12,7 @@ import { Router} from '@angular/router';
 export class LoginComponent implements OnInit {
   userForm: User = new User();
   form: UntypedFormGroup;
+  
 
 
   constructor(private router:Router,private authenticationService: AuthenticationService) { 
