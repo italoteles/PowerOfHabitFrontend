@@ -41,7 +41,6 @@ export class LoginComponent implements OnInit {
     this.authenticationService.login(this.userForm).subscribe(userResult => {
       if (userResult.length != 0){
         //o session so guarda string, então para guardar objeto temos que dar o stringfy
-        console.log("Meu usuário é ===========" +JSON.stringify(userResult[0]))
         sessionStorage.setItem('user', JSON.stringify(userResult[0]));
 
         //para ler o session tem que dar um parse de string para JSON

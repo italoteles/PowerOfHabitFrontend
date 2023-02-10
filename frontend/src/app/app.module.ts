@@ -10,7 +10,7 @@ import { PainelPrincipalComponent } from './components/painel-principal/painel-p
 import { RegisterComponent } from './components/register/register.component';
 import { HeaderComponent } from './components/painel-principal/header/header.component';
 import { FooterComponent } from './components/painel-principal/footer/footer.component';
-import { ConteudoComponent } from './components/painel-principal/conteudo/conteudo.component';
+import { MainComponent } from './components/painel-principal/main/main.component';
 
 
 @NgModule({
@@ -21,7 +21,7 @@ import { ConteudoComponent } from './components/painel-principal/conteudo/conteu
     RegisterComponent,
     HeaderComponent,
     FooterComponent,
-    ConteudoComponent
+    MainComponent
   ],
   imports: [
     BrowserModule,
