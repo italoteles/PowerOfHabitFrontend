@@ -11,6 +11,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { HeaderComponent } from './components/painel-principal/header/header.component';
 import { FooterComponent } from './components/painel-principal/footer/footer.component';
 import { MainComponent } from './components/painel-principal/main/main.component';
+import { GruposComponent } from './components/grupos/grupos.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { MainComponent } from './components/painel-principal/main/main.component
     RegisterComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    GruposComponent
   ],
   imports: [
     BrowserModule,
