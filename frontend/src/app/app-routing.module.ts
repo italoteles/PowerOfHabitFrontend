@@ -8,7 +8,13 @@ import { RegisterComponent } from './components/register/register.component';
 const routes: Routes = [
   {
     path: "painelPrincipal",
-    component: PainelPrincipalComponent
+    component: PainelPrincipalComponent,
+    children: [
+      {
+        path: 'grupos',
+        component: GruposComponent
+      }
+    ]
   },
   {
     path: "login",
@@ -17,11 +23,6 @@ const routes: Routes = [
   {
     path: "registration",
     component: RegisterComponent
-  },
-  {
-    path: "grupos",
-    component: GruposComponent,
-    outlet : "mainRouter"
   },
   {
     path: '',
