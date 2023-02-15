@@ -1,0 +1,21 @@
+<p-table [value]="groups" [tableStyle]="{'min-width': '50rem'}">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Unit</th>
+            <th>Active?</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-group>
+        <tr>
+            <td>{{group.id}}</td>
+            <td>{{group.name}}</td>
+            <td>{{group.description}}</td>
+            <td>{{group.unit}}</td>
+            <td>{{group.active}}</td>
+            
+        </tr>
+    </ng-template>
+</p-table>

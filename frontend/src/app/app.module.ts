@@ -5,14 +5,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
-import { AuthenticationService } from './services/authentication.service';
+
 import { PainelPrincipalComponent } from './components/painel-principal/painel-principal.component';
 import { RegisterComponent } from './components/register/register.component';
 import { HeaderComponent } from './components/painel-principal/header/header.component';
 import { FooterComponent } from './components/painel-principal/footer/footer.component';
 import { MainComponent } from './components/painel-principal/main/main.component';
 import { GruposComponent } from './components/grupos/grupos.component';
+import { ListGroupsComponent } from './components/grupos/list-groups/list-groups.component';
 
+//components primeng
+import { TableModule } from 'primeng/table';
+import { AddEditGroupComponent } from './components/grupos/add-edit-group/add-edit-group.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,9 @@ import { GruposComponent } from './components/grupos/grupos.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    GruposComponent
+    GruposComponent,
+    ListGroupsComponent,
+    AddEditGroupComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,7 @@ import { GruposComponent } from './components/grupos/grupos.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    
+    TableModule
 
   ],
   providers: [
